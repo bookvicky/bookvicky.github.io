@@ -2,189 +2,193 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	 
+	Hexo
+	</title>
+	
+	<!-- keywords,description -->
+	 
 
-    
-      <link rel="icon" href="/favicon.png" />
-    
-
-    <title>
-        
-          Hexo
-        
-    </title>
-
-    <!-- Spectre.css framework -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
-
-    <!-- theme css & js -->
-    
-<link rel="stylesheet" href="/css/book.css">
-
-    
-<script src="/js/book.js"></script>
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
 
 
-    <!-- tocbot -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
-    
-    <!-- katex -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.com";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
 
-    
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const zooming = new Zooming()
-    zooming.listen('.book-content img')
-})
-</script>
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.5.1/dist/Valine.min.js"></script>
+
+	
+	
 
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
+	<header id="header">
+    <a id="title" href="/" class="logo">Hexo</a>
 
-<div class="book-container">
-  <div class="book-sidebar">
-    <div class="book-brand">
-  <a href="/">
-    <img src="/favicon.png">
-    <span>HEXO</span>
-  </a>
-</div>
-    <div id="menu" class="book-menu hide">
-  
-</div>
-
-
-<script src="/js/book-menu.js"></script>
-
-  </div>
-
-  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
-  <div class="sidebar-toggle-inner"></div>
-</div>
-
-<script>
-function add_inner() {
-  let inner = document.querySelector('.sidebar-toggle-inner')
-  inner.classList.add('show')  
-}
-
-function remove_inner() {
-  let inner = document.querySelector('.sidebar-toggle-inner')
-  inner.classList.remove('show')
-}
-
-function sidebar_toggle() {
-    let sidebar_toggle = document.querySelector('.sidebar-toggle')
-    let sidebar = document.querySelector('.book-sidebar')
-    let content = document.querySelector('.off-canvas-content')
-    if (sidebar_toggle.classList.contains('extend')) { // show
-        sidebar_toggle.classList.remove('extend')
-        sidebar.classList.remove('hide')
-        content.classList.remove('extend')
-    }
-    else { // hide
-        sidebar_toggle.classList.add('extend')
-        sidebar.classList.add('hide')
-        content.classList.add('extend')
-    }
-}
-</script>
-
-  <div class="off-canvas-content">
-    <div class="columns">
-      <div class="column col-10 col-lg-12">
-        <div class="book-navbar">
-          <!-- For Responsive Layout -->
-
-<header class="navbar">
-  <section class="navbar-section">
-    <a onclick="open_sidebar()">
-      <i class="icon icon-menu"></i>
-    </a>
-  </section>
-</header>
-
-        </div>
-        <div class="book-content">
-          <div class="book-post">
-  <h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1>
-</div>
-
-
-  <div class="book-comments">
+	<ul id="menu">
     
 
+    
 
+    
 
-
-  </div>
-
-
-
-<script src="/js/book-post.js"></script>
-
-        </div>
-      </div>
-      <div class="column col-2 hide-lg">
-        <div class="book-post-info">
-  
-    <div class="book-post-meta">
-
-  <div class="author">
-
-    <!-- Author image -->
-    <div class="author-img">
+    
       
-        <figure
-          class="avatar avatar-lg"
-          data-initial="J"
-          style="background-color: #3b4351;">
-        </figure>
       
-    </div>
-
-    <!-- Author title -->
-    <div class="author-title">
-      <div>John Doe</div>
-      <div>2023-09-06</div>
-    </div>
-  </div>
-
+        <li class="menu-item">
+          <a href='https://github.com/wujun234/hexo-theme-tree' class="menu-item-link" target="_blank">
+            Tree
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a href='https://github.com/wujun234/uid-generator-spring-boot-starter' class="menu-item-link" target="_blank">
+            UidGenerator
+          </a>
+        </li>
+      
+    
   
+    
+      <li class="menu-item">
+        <a href='https://github.com/wujun234' class="menu-item-link" target="_blank">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </li>
+    
+	</ul>
+</header>
 
-  <div class="divider"></div>
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/09/06/hello-world/">
+                     
+										    Hello World
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+		</div>
+	</div>
 </div>
-  
 
-  <div class="book-tocbot">
+	<!-- 引入正文 -->
+	<div id="content">
+		<div id="index">
+	
+		<div class="index-li">
+			<a href="/2023/09/06/hello-world/">
+				<h2 class="index-title">
+					Hello World
+				</h2>
+				<div class="index-brief">
+					Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2023-09-06</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+	
+	<div id="index-paginator">
+		
+	</div>
 </div>
-<div class="book-tocbot-menu">
-  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
-  <a onclick="go_top()">Back to top</a>
-  <a onclick="go_bottom()">Go to bottom</a>
+
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start"></span>-<span id="footerYear-end"></span>
+	<a href="/">John Doe</a> 
+	
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
 </div>
 
 
-<script src="/js/book-toc.js"></script>
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
 
-</div>
-      </div>
-    </div>
-  </div>
-  
-  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
-</div>
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
 
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 </body>
 </html>
-
-
-<script src="/js/book.js"></script>
